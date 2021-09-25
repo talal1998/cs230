@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="UserNameController">
+	<children>
+		<Pane prefHeight="450.0" prefWidth="600.0"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<ImageView fx:id="bgImage" fitHeight="450.0"
+					fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+				<Label alignment="CENTER" layoutX="153.0" layoutY="96.0"
+					prefHeight="94.0" prefWidth="285.0" text="CREATE NEW PLAYER"
+					textAlignment="CENTER">
+					<font>
+						<Font name="Courier New" size="26.0" />
+					</font>
+				</Label>
+				<TextField fx:id="userName" alignment="CENTER" layoutX="168.0"
+					layoutY="190.0" prefHeight="106.0" prefWidth="254.0"
+					promptText="User Name here">
+					<font>
+						<Font size="19.0" />
+					</font>
+				</TextField>
+				<Button fx:id="back" layoutX="501.0" layoutY="387.0"
+					mnemonicParsing="false" onAction="#goBack" prefHeight="49.0"
+					prefWidth="85.0" text="BACK" />
+				<Button fx:id="enter" layoutX="253.0" layoutY="312.0"
+					mnemonicParsing="false" onAction="#createNewPlayer"
+					prefHeight="49.0" prefWidth="85.0" text="ENTER" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartGameController">
+	<children>
+		<Pane layoutX="-162.0" onKeyPressed="#keyPressed" onMouseClicked="#loadNextScene" prefHeight="450.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<ImageView fx:id="bgImage" fitHeight="450.0" fitWidth="600.0" onMouseClicked="#loadNextScene" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background.jpg" />
+               </image></ImageView>
+				<Label alignment="CENTER" layoutX="104.0" layoutY="23.0" prefHeight="90.0" prefWidth="393.0" text="SANTA'S LOST HAT" textFill="#101b54">
+					<font>
+						<Font name="Halo" size="30.0" />
+					</font>
+				</Label>
+				<Label alignment="CENTER" layoutX="60.0" layoutY="393.0" prefHeight="24.0" prefWidth="494.0" text="CLICK THE MOUSE TO START" textFill="#050114">
+               <font>
+                  <Font name="Halo" size="20.0" />
+               </font></Label>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

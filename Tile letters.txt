@@ -1,0 +1,17 @@
+TILE LETTERS:
+Floor = 	    F
+Wall = 		    W
+Start = 	    S
+Goal = 		    G
+Fire = 		    H
+Fire Boots =    B!
+Water = 	    A
+Flippers = 	    Q!
+Token Door = 	D*
+Colour Door = 	C!
+Colour Key = 	K!
+Token = 	    Z*
+Teleporter = 	T!
+
+! Always requires more info
+* requires more info when being loaded from save file

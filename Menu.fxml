@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuController">
+   <children>
+      <Pane layoutX="-162.0" prefHeight="200.0" prefWidth="362.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="450.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background.jpg" />
+               </image></ImageView>
+            <VBox layoutX="372.0" layoutY="236.0" prefHeight="102.0" prefWidth="206.0">
+               <children>
+                  <Button fx:id="startGame" mnemonicParsing="false" onAction="#startGame" prefHeight="48.0" prefWidth="205.0" text="START GAME">
+                     <font>
+                        <Font name="Halo" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="50.0" prefWidth="206.0" text="EXIT">
+                     <font>
+                        <Font name="Halo" size="14.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" layoutX="42.0" layoutY="40.0" prefHeight="79.0" prefWidth="495.0" text="Santa's Lost Hat">
+               <font>
+                  <Font name="Halo" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
